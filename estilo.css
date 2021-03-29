@@ -150,7 +150,7 @@ header nav a {
     background-color: #F3F3F3;
 }
 
-/* Amostra */
+/* Produto */
 .produto.container {
     padding: 2rem 0;
     justify-content: space-between;
@@ -178,4 +178,30 @@ header nav a {
 
 .produto .get_app {
     color: #777;
+}
+
+/* qualidades */
+.qualidades {
+    padding: 1rem 0;
+    background-color: #44B67A;
+}
+
+.qualidades li {
+    max-width: calc((100% / 12 * 4) - 2rem);
+    margin: 1rem;
+    text-align: center;
+    color: #F4F4F4;
+}
+
+.qualidades .img_container {
+    width: 40px;
+    margin: 0 auto;
+}
+
+.qualidades h3 {
+    margin: 2rem 0 1rem;
+}
+
+.qualidades p {
+    color: rgba(255, 255, 255, 0.6);
 }
