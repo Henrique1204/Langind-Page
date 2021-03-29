@@ -27,6 +27,7 @@ img {
 /* Gerais */
 body {
     font-family: sans-serif;
+    background-color: #F9F9F9;
 }
 
 .container {
@@ -37,8 +38,19 @@ body {
     flex-wrap: wrap;
 }
 
+.titulo {
+    color: #626262;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.descricao {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #777;
+}
+
 .btn {
-    width: 200px;
     padding: 1rem 1rem;
     border: 2px solid;
     font-size: 1rem;
@@ -48,7 +60,7 @@ body {
     display: inline-block;
 }
 
-.btn::before {
+.icon::before {
     content: "";
     width: 1rem;
     height: 1rem;
@@ -56,14 +68,41 @@ body {
     display: inline-block;
 }
 
-.btn.iphone::before {
+.icon.iphone::before {
     background: url("img/icon_apple_btn.png") no-repeat center;
+}
+
+.icon.android::before {
+    background: url("img/icon_android_btn.png") no-repeat center;
+}
+
+.icon.camera::before {
+    background: url("img/icon_camera.png") no-repeat center;
     background-size: 100%;
 }
 
-.btn.android::before {
-    background: url("img/icon_android_btn.png") no-repeat center;
+.icon.video::before {
+    background: url("img/icon_filme.png") no-repeat center;
     background-size: 100%;
+}
+
+.icon.olho::before {
+    background: url("img/icon_olho.png") no-repeat center;
+    background-size: 100%;
+}
+
+.icon.foto::before {
+    background: url("img/icon_foto.png") no-repeat center;
+    background-size: 100%;
+}
+
+.icon.localizacao::before {
+    background: url("img/icon_localizacao.png") no-repeat center;
+    background-size: 100%;
+}
+
+.icon.play::before {
+    background: url("img/icon_play.png") no-repeat center;
 }
 
 /* Header */
@@ -102,18 +141,6 @@ header nav a {
     width: 50%;
 }
 
-.intro h1 {
-    color: #626262;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.intro p {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: #777;
-}
-
 .intro .btn + .btn {
     margin-left: 1rem;
 }
@@ -121,4 +148,34 @@ header nav a {
 /* Parceiros */
 .parceiros {
     background-color: #F3F3F3;
+}
+
+/* Amostra */
+.produto.container {
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+.produto .conteudo {
+    max-width: calc((100% / 12 * 6) - 20px);
+}
+
+.caracteristicas {
+    margin: 2rem 0;
+}
+
+.caracteristicas li {
+    color: #626262;
+}
+
+.caracteristicas li + li {
+    margin-top: 1rem;
+}
+
+.produto .btn {
+    margin-right: 1rem;
+}
+
+.produto .get_app {
+    color: #777;
 }
