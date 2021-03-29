@@ -117,3 +117,8 @@ header nav a {
 .intro .btn + .btn {
     margin-left: 1rem;
 }
+
+/* Parceiros */
+.parceiros {
+    background-color: #F3F3F3;
+}
