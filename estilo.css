@@ -25,12 +25,45 @@ img {
 }
 
 /* Gerais */
+body {
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.btn {
+    width: 200px;
+    padding: 1rem 1rem;
+    border: 2px solid;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #626262;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.btn::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.btn.iphone::before {
+    background: url("img/icon_apple_btn.png") no-repeat center;
+    background-size: 100%;
+}
+
+.btn.android::before {
+    background: url("img/icon_android_btn.png") no-repeat center;
+    background-size: 100%;
 }
 
 /* Header */
@@ -56,4 +89,31 @@ header nav a {
     font-size: 1.125rem;
     color: #F4F4F4;
     display: block;
+}
+
+/* Introdução */
+.intro {
+    padding: 8rem 0;
+    background: url('img/intro.png') no-repeat center;
+    background-size: cover;
+}
+
+.intro .conteudo {
+    width: 50%;
+}
+
+.intro h1 {
+    color: #626262;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.intro .btn + .btn {
+    margin-left: 1rem;
 }
