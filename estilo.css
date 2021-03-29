@@ -23,3 +23,37 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* Gerais */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Header */
+header {
+    padding: 2rem 0;
+    background-color: #44B67A;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li + li {
+    margin-left: 1rem;
+}
+
+header nav a {
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: #F4F4F4;
+    display: block;
+}
